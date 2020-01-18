@@ -3,15 +3,58 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Text Adventure</title>
+		<title>Pokemon</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<h1 class="title">Text Adventure</h1>
-		<p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius porro sunt quam in voluptatibus facilis, illo placeat, repudiandae animi nulla sint, optio perspiciatis perferendis accusamus laudantium consectetur quibusdam harum?</p>
-		<p>Hola Ralf</p>
+		<div class="container">
+			<!-- Reducir el tamaño de la pantalla o zona jugable -->
+			<div class="inner-container">
+				<!-- Estadisticas de uno y el enemigo (ej. vida) -->
+				<div class="stats">
+					<div class="pokemon-stats pokemon-stats--enemy">
+						<p class="pokemon-stats__name">Pikachu</p>	
+						<p class="pokemon-stats__lvl">100</p>	
+						<p class="pokemon-stats__hp">500</p>
+					</div>
+					<div class="pokemon-stats pokemon-stats--own">
+						<p class="pokemon-stats__name">Evee</p>
+						<p class="pokemon-stats__lvl">100</p>
+						<p class="pokemon-stats__hp">500</p>
+					</div>
+				</div>
+				<!-- Game event (ej. player one attacked) -->
+				<div class="event">
+					<p class="event__description">Pikachu ha usado Thunderball</p>
+				</div>
+				<!-- Available actions for the player -->
+				<!-- TODO: Add navigation to change pokemon and use objects -->
+				<div class="actions">
+					<div class="action">
+						<div class="action__name">Tackle</div>
+						<div class="action__pp">30</div>
+						<div class="action__type">Normal</div>
+					</div>
+					<div class="action">
+						<div class="action__name">Tackle</div>
+						<div class="action__pp">30</div>
+						<div class="action__type">Normal</div>
+					</div>
+					<div class="action">
+						<div class="action__name">Tackle</div>
+						<div class="action__pp">30</div>
+						<div class="action__type">Normal</div>
+					</div>
+					<div class="action">
+						<div class="action__name">Tackle</div>
+						<div class="action__pp">30</div>
+						<div class="action__type">Normal</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<script src="main.js" async defer></script>
 	</body>
